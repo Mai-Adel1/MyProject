@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our resturant Registration</title>
+    <link rel="stylesheet" href="css/registeration.css"/>
+  
+</head>
+<body>
+  <div class="header">
+    <ul class="topnav">
+        <li><a  href="index.html" target="_blank">Home</a></li>
+        <li><a href="Register.html" target="_blank">Registration form</a></li>
+        <li class="dropdown">
+            <a  href="javascript:void(0)" class="dropbtn active">Our Resturant</a>
+            <div class="dropdown-content">
+              <a href="time.html" target="_blank">times of work</a>
+              <a href="resturant_register.html"class="active" target="_blank">our resturant Registration</a>
+            </div>
+          </li>
+          <li class="gallary"><a href="image-gallary.html" target="_blank"> Favourite foods</a></li>
+        <li class="right"><a href="About.html" target="_blank">About</a></li>
+      </ul></div>
+      <div class="content">
+    <form id="resturant" method="get" onsubmit="submit()">
+        
+        <table  style="overflow-x:auto;">
+            <caption>OUR Registration</caption>
+          <tr >
+            <th colspan="2">Pizza shop</th> </th>
+          </tr>
+          <tr>
+            <td style="text-align:center;"><label for="name">Name</label> </td>
+            <td>
+              <input type="text" name="name" id="name">
+            </td>
+          </tr>
+          <tr>
+            <tr>
+                <td>pizza topping </td>
+                <td><input type="radio" id="type1" name="menu" value="supreme">
+                  <label for="type1">supreme</label><br>
+                <input type="radio" id="type2" name="menu" value="vegetables">
+                <label for="type2">vegetables</label><br>
+                <input type="radio" id="type3" name="menu" value="chicken">
+                <label for="type3">chicken</label>
+                </td>
+              </tr>
+          
+         <tr>
+           <td><label for="sause">pizza sauce </label> </td>
+           <td><select name="veg" id="sause">
+            <option value="tomato">tomato</option>
+            <option value="tomato">Mayonnaise</option>
+          </select></td>
+         </tr> 
+         <tr>
+           <td> Extras</td>
+           <td><input type="checkbox" name="k" id="exstra1" value="cheese">
+           <label for="exstra1">cheese</label>
+           <input type="checkbox" name="k" id="exstra2" value="mushroom">
+           <label for="exstra2">mushroom</label>
+         </tr>
+          
+           <tr>
+            <td colspan="2">
+              <label for="mess">Delivery notes</label><br>
+              <textarea id="mess" cols="50" rows="10"  placeholder="test text..." ></textarea></td>
+            </tr>
+           </tr>
+           
+          <div text-align="center">
+            <tr>
+              <td ><input type="submit" value="Submit" id="submit" onclick="submit()"> </td>
+              <td><input type="reset" value="Delete" id="button"></td>
+            </tr>
+          </div>
+
+          </table>
+      </form> </div>
+      <script>
+        function submit(){
+
+         var c= alert("thanks we will give you your order");
+          return 0;
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url(../images/pizza.jpg), url(../images/s1.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 0;
+    margin:0;
+  }
+  
+  ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(51, 51, 51, 0.993);
+    }
+    
+    ul.topnav li {float: left;}
+    
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.topnav li a:hover:not(.active) ,.dropdown:hover{background-color: rgb(12, 150, 131);}
+    
+    ul.topnav li a.active {background-color: #e01c78;}
+    
+    ul.topnav li.right {float: right;}
+    
+    @media screen and (max-width: 600px) {
+      ul.topnav li.right, 
+      ul.topnav li {float: none;}
+    }
+     .dropbtn {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content  a {
+      color:white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      background-color: rosybrown;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;}
+    div.transbox {
+      margin: 20px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.7;
+      margin-top:10%;
+    }
+    table,td,th{
+        border: 2px solid rgb(240, 203, 217);
+        border-collapse: collapse;
+        padding: 10px;
+        width:60%;
+        border-spacing: 10px;
+     
+        margin-left: 5%;
+        margin-top: 3%;
+}
+td{
+    text-align: left;
+}
+th {
+    background-color: #d13e82;
+    color: white;
+  }
+  tr:nth-child(even) {
+      background-color: #dee1e4;
+    }
+
+
+caption{
+    text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   color: rgb(34, 160, 192);
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-image: url(../images/s1.jpg);
+    }
+}

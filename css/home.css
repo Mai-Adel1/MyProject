@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.6;
+    font-family: 'Cinzel', serif;
+    font-family: 'Slabo 27px', serif;
+    font-family: 'Viaoda Libre', cursive;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.993);
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) ,.dropdown:hover{background-color: rgb(12, 150, 131);}
+  
+  ul.topnav li a.active {background-color: #e01c78;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+   .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content  a {
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: rosybrown;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+  div.transbox {
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.7;
+    margin-top:10%;
+  }
+  div.transbox h1 {
+    margin: 5%;
+    margin-bottom: none;
+    font-weight: bold;
+    color: #000000;
+    font-size:50px;
+  }
+  div.transbox p {
+    margin: 5%;
+    margin-bottom: none;
+    font-weight: bold;
+    color: #000000;
+    font-size:30px;
+  }
+  span{
+      color: red;
+
+  }
+  a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .transbox{
+    position:relative
+  }
+button{
+     padding: 15px;
+     position: absolute;
+     right: 90px;
+     bottom: 0;
+     border-radius: 5px;
+     border-color: wheat;
+     
+    
+  }
+  h1{
+    text-align: center;
+    color: rgb(4, 90, 90);
+  }
+  h2{
+    text-align: center;
+  }
+ button:hover{
+   background-color: rgb(224, 31, 63);
+ }
+ 
+
+  
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="css/regestration_form.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;900&family=Courgette&family=Slabo+27px&family=Viaoda+Libre&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;900&family=Courgette&family=Kaushan+Script&family=Slabo+27px&family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <ul class="topnav">
+            <li><a  href="index.html" target="_blank">Home</a></li>
+            <li><a class="active" href="Register.html" target="_blank">Contact US</a></li>
+            <li class="dropdown">
+                <a  href="javascript:void(0)" class="dropbtn">our Resturant</a>
+                <div class="dropdown-content">
+                  <a href="time.html" target="_blank">times of work</a>
+                  <a href="resturant_register.html" target="_blank">Our resturant Registration</a>
+                </div>
+              </li>
+              <li class="gallary"><a href="image-gallary.html" target="_blank"> Favourite foods</a></li>
+            <li class="right"><a href="About.html" target="_blank">About</a></li>
+          </ul></div>
+          <h1 class="head1">This is registration form</h1><hr>
+              <h3 class="head2">Please complete this form...</h3>
+          <div class="content">
+              
+    <form id="myform"   method="POST" onsubmit="validation()">
+        <table>
+            <tr>
+                <td class="label"><label for="fname">First name</label></td>
+                <td ><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="lname">Last name</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="email">e-mail</label></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="pass" >Password</label></td>
+                <td><input type="password" id="pass" name="pass"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="phone">Mobile Phone</label></td>
+                <td><input type="text" id="phone" name="phone_number" placeholder="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="address">address</label></td>
+                <td><input type="text" id="address" name="address"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="gender">gender</label> </td>
+                <td><select name="gender" id="gender" required>
+                 <option value="male">male</option>
+                 <option value="female">female</option>
+               </select></td>
+              </tr> 
+              <tr>
+                  <td colspan="2"  class="sub"><input type="submit" value="Submit" id="submit" "></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="sub"><input type="reset" value="clear" id="clear"></td>
+              </tr>
+
+        </table>
+    </form></div>
+    <script src="new.js"></script>
+</body>
+</html>
