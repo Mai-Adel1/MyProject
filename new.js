@@ -24,7 +24,7 @@ function validation(){
   
   
   if(pass.search(/[ ]/)!=-1){
-     alert("**must not include a space**");
+     alert("**password must not include a space**");
   return false;
  }
   // limit the lenght of the  pass
@@ -35,33 +35,33 @@ function validation(){
     // must enclud numbers
  if(pass.search(/[0-9]/)==-1){
       
-      alert("must include at least a number");
+      alert("**password must include at least a number**");
       return false;
   }
   //not to accept without upper characters
   var first=pass.substr(0,1);
   if(!(first.match(/[A-Z]/))){
-      alert("first letter should be Uppercase");
+      alert("**first letter should be Uppercase in password**");
       return false;
   }
   
   // not to accept without lower characters
  if(pass.search(/[a-z]/)==-1){
-      alert("**must include at least 1 lower character**");
+      alert("**password must include at least 1 lower character**");
   return false;
  }
   // not accept without special characters
   if(pass.search(/[!\@\#\$\%\^\&\*\(\)\_\-\=\+\<\>\,\?]/)==-1){
      
-         alert("**must include 1 special character**");
+         alert("**password must include 1 special character**");
       return false;
      }
 
  
-     if (!email.match(/^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/)){
-		alert("Email is Not Valid");
-		check= false;
-	}
+     if(email.indexOf("@") == -1 || email.length < 6){
+      alert("**Please Enter valid Email**");
+       return false;}
+       
     if (!phone.match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)){
 		//for mobile phone in egypt //if (!phone.match(/^[0-9]{11}$/)){
 

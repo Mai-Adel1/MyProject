@@ -1,6 +1,8 @@
-*{
-    box-sizing: border-box;
-  }
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
   body{
     background-image: url(../images/pizza.jpg), url(../images/s1.jpg);
     background-position: right bottom, left top;

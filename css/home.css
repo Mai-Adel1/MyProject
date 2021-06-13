@@ -1,5 +1,7 @@
-*{
+* {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 body{
     margin:0;
@@ -8,8 +10,6 @@ body{
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.6;
-    font-family: 'Cinzel', serif;
-    font-family: 'Slabo 27px', serif;
     font-family: 'Viaoda Libre', cursive;
 }
 ul.topnav {
@@ -101,9 +101,6 @@ ul.topnav {
   }
 button{
      padding: 15px;
-     position: absolute;
-     right: 90px;
-     bottom: 0;
      border-radius: 5px;
      border-color: wheat;
      
@@ -114,7 +111,8 @@ button{
     color: rgb(4, 90, 90);
   }
   h2{
-    text-align: center;
+    margin-left: 5px;
+    color: rgb(48, 30, 210);
   }
  button:hover{
    background-color: rgb(224, 31, 63);
