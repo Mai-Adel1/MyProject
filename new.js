@@ -68,6 +68,12 @@ function validation(){
 		alert("Phone is not valid");
 		check=false;
 	}
+  else
+  {
+    alert("thank you");
+    window.location.href="./index.html";
+    return  true;
+  }
 
 
   

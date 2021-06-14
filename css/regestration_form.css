@@ -81,7 +81,7 @@ ul.topnav {
       overflow-x: auto;
       border:2px solid rgb(235, 209, 225);
       background-color: rgb(255, 80, 109);
-      box-shadow: 6px 5px 6px rgb(221, 186, 221);
+      box-shadow: 10px 10px 8px 10px #d1b9c8;
   }
   table ,td,th{
       
@@ -118,3 +118,14 @@ ul.topnav {
     margin-left: 20px;
     color: rgb(255, 80, 109);
   }
+  input:focus {
+    background-color: rgb(243, 210, 219);
+    
+  }
+  input[type=text] {
+    transition: ease-in-out, width .35s ease-in-out;
+  }
+  input[type=text]:focus {
+    width: 250px;
+  }
+  
